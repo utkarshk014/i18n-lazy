@@ -118,7 +118,11 @@ const Navbar = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent className="flex flex-col gap-2 justify-start py-4 pl-4 pr-20 border rounded-md bg-background">
                 {languages.map((lang) => (
-                  <DropdownMenuItem key={lang.code} className="cursor-pointer">
+                  <DropdownMenuItem
+                    onClick={() => handleLanguageChange(lang.code)}
+                    key={lang.code}
+                    className="cursor-pointer"
+                  >
                     {lang.name}
                   </DropdownMenuItem>
                 ))}
