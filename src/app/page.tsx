@@ -1,7 +1,8 @@
 "use client";
-import { Book, Link } from "lucide-react";
+import { Book } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLazyI18n } from "i18n-lazy";
+import Link from "next/link";
 
 export default function Home() {
   const { translate } = useLazyI18n();
@@ -26,9 +27,6 @@ export default function Home() {
             </Link>
           </Button>
         </div>
-        <h1>
-          {translate("it is  a youtube video, please watch and have fun")}
-        </h1>
         <div className="max-w-6xl mx-auto mb-20">
           <div className="aspect-video bg-muted rounded-xl flex items-center justify-center">
             <iframe

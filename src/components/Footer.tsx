@@ -1,6 +1,6 @@
 "use client";
 import { useLazyI18n } from "i18n-lazy";
-import { Link } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {

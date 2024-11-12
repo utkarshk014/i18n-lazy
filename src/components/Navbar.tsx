@@ -8,9 +8,10 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@radix-ui/react-dropdown-menu";
-import { ChevronDown, Link, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { useLazyI18n } from "i18n-lazy";
 import { codeToLanguage } from "@/context/TranslationProvider";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,12 +47,12 @@ const Navbar = () => {
             <ThemeToggle />
             <Button variant="ghost" asChild>
               <Link href="/docs" className="flex items-center space-x-1">
-                <span>{translate("Docs")}</span>
+                <span>{translate("Documentation")}</span>
               </Link>
             </Button>
             <Button variant="ghost" asChild>
               <Link href="/contact" className="flex items-center space-x-1">
-                <span>{translate("Docs")}</span>
+                <span>{translate("Contact")}</span>
               </Link>
             </Button>
 

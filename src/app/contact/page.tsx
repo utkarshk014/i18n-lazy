@@ -1,7 +1,8 @@
 "use client";
 
-import { Mail, Calendar, Linkedin, Link } from "lucide-react";
+import { Mail, Calendar, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function ContactPage() {
   return (
