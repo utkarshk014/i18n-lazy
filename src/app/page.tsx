@@ -1,5 +1,5 @@
 "use client";
-import { Book } from "lucide-react";
+import { Book, Link } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLazyI18n } from "i18n-lazy";
 
@@ -20,10 +20,10 @@ export default function Home() {
             {translate("Translate your content instantly with zero effort.")}
           </p>
           <Button size="lg" asChild>
-            <a href="/docs" className="inline-flex items-center">
+            <Link href="/docs" className="inline-flex items-center">
               {translate("Read the Docs")}
               <Book className="ml-2 w-4 h-4" />
-            </a>
+            </Link>
           </Button>
         </div>
         <h1>

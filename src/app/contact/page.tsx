@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Calendar, Linkedin } from "lucide-react";
+import { Mail, Calendar, Linkedin, Link } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function ContactPage() {
@@ -36,10 +36,9 @@ export default function ContactPage() {
 
         {/* Contact Methods */}
         <div className="space-y-6">
-          <a
+          <Link
             href="https://calendly.com/utkarshsuneela/30min"
             target="_blank"
-            rel="noopener noreferrer"
             className="block"
           >
             <Button
@@ -49,30 +48,29 @@ export default function ContactPage() {
               <Calendar className="w-5 h-5" />
               <span>Schedule a meeting with me</span>
             </Button>
-          </a>
+          </Link>
 
           <div className="flex items-center space-x-3">
             <Mail className="w-5 h-5 text-muted-foreground" />
             <span className="text-muted-foreground">Email: </span>
-            <a
+            <Link
               href="mailto:utkarshsuneela@gmail.com"
               className="text-primary hover:underline"
             >
               utkarshsuneela@gmail.com
-            </a>
+            </Link>
           </div>
 
           <div className="flex items-center space-x-3">
             <Linkedin className="w-5 h-5 text-muted-foreground" />
             <span className="text-muted-foreground">LinkedIn: </span>
-            <a
+            <Link
               href="https://www.linkedin.com/in/utkarsh-suneela-a65b12246/"
               target="_blank"
-              rel="noopener noreferrer"
               className="text-primary hover:underline"
             >
               linkedin.com/in/utkarsh-suneela-a65b12246/
-            </a>
+            </Link>
           </div>
         </div>
       </div>

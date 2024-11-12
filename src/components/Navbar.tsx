@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@radix-ui/react-dropdown-menu";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Link, Menu, X } from "lucide-react";
 import { useLazyI18n } from "i18n-lazy";
 import { codeToLanguage } from "@/context/TranslationProvider";
 
@@ -33,26 +33,26 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a
+            <Link
               href="/"
               className="text-2xl font-bold text-primary cursor-pointer"
             >
               i18n-lazy
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
             <Button variant="ghost" asChild>
-              <a href="/docs" className="flex items-center space-x-1">
+              <Link href="/docs" className="flex items-center space-x-1">
                 <span>{translate("Docs")}</span>
-              </a>
+              </Link>
             </Button>
             <Button variant="ghost" asChild>
-              <a href="/contact" className="flex items-center space-x-1">
-                <span>{translate("Contact")}</span>
-              </a>
+              <Link href="/contact" className="flex items-center space-x-1">
+                <span>{translate("Docs")}</span>
+              </Link>
             </Button>
 
             {/* Language Selector */}
@@ -99,10 +99,14 @@ const Navbar = () => {
         <div className="md:hidden bg-background/95 border-b">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Button variant="ghost" className="w-full justify-start" asChild>
-              <a href="/docs">{translate("Docs")}</a>
+              <Link href="/docs">
+                <span>{translate("Docs")}</span>
+              </Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start" asChild>
-              <a href="/contact">{translate("Contact")}</a>
+              <Link href="/contact">
+                <span>{translate("Contact")}</span>
+              </Link>
             </Button>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>

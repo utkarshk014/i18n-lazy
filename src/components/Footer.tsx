@@ -1,5 +1,6 @@
 "use client";
 import { useLazyI18n } from "i18n-lazy";
+import { Link } from "lucide-react";
 import React from "react";
 
 const Footer = () => {
@@ -24,28 +25,28 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
+                <Link
                   href="/docs"
                   className="text-muted-foreground hover:text-primary"
                 >
                   {translate("Documentation")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/contact"
                   className="text-muted-foreground hover:text-primary"
                 >
                   {translate("Contact")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/github"
                   className="text-muted-foreground hover:text-primary"
                 >
                   GitHub
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

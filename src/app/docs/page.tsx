@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { DocsContent } from "./_components/DocsContent";
-import { sections } from "@/lib/constants";
 import { useLazyI18n } from "i18n-lazy";
 
 export default function DocsPage() {
